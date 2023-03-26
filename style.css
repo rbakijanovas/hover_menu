@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to bottom right, #b92b27, #1565c0);
+    height: 100vh;
+}
+
+.menu {
+    max-width: 600px;
+    margin: 0;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    background: #1565c0;
+    color: whitesmoke;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+
+p {
+    padding: 15px 20px ;
+    height: 45px;
+    transition: 0.3s;
+    cursor: pointer;
+    }
+    
+p:nth-of-type(even) {
+    background: #b92b27;
+}
+p::before{
+    content: '';
+    position: absolute;
+    display: block;
+    right: 300px;
+    border: 4px solid darkgoldenrod;
+    transition: 0.2s;
+}
+          
+.main:hover::before{
+    top: 0px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+.services:hover::before{
+    top: 45px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+.portfolio:hover::before{
+    top: 90px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+.about_me:hover::before{
+    top: 135px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+.contacts:hover::before{
+    top: 180px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+.faq:hover::before{
+    top: 225px;
+    right: 100%;
+    height: 37px;
+    transform: translateX(100%);
+}
+
+p::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 300px;
+    display: block;
+    width: 123px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    height: 45px;
+    background: rgb(255, 243, 243);
+    transition: 0.4s; 
+    transition-delay: 0.2s;
+}
+
+    .main:hover::after{
+        top: 3px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}
+    .services:hover::after{
+        top: 48px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}
+    .portfolio:hover::after{
+        top: 93px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}   
+    .about_me:hover::after{
+        top: 138px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}
+    .contacts:hover::after{
+        top: 183px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}
+    .faq:hover::after{
+        top: 228px;
+        right: 0px; 
+        height: 35px;
+        transform: translateX(0px);
+        opacity: 0.2;
+}
+  
+img {
+    width: 40%;
+    float: left;
+    margin: 0px 20px 20px 20px;
+    opacity: 0.6;
+}
+
+h1 {
+    display: inline-block;
+    top: 80px;
+    right: 380px;
+    font-size: 46px;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 800px;
+    padding: 0px 0px 80px 0px;
+    color: whitesmoke;
+    
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.container {
+    position: relative;
+    /* top: 250px; */
+    min-width: 50%;
+    max-width: 80%;
+    background: transparent ;
+    margin: 0 100px;
+    padding: 50px;
+    display: inline-block;
+}
